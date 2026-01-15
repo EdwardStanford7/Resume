@@ -3,7 +3,7 @@
 #let _navy_blue = rgb("#001f8f")
 
 #let _big_bullets = false
-#let _bullets = false
+#let _bullets = true
 #let _lines = true
 #let _top_line = false
 #let _left_titles = false
@@ -11,8 +11,8 @@
 #let _line_above = true
 #let _centered_header = false
 #let _no_links = false
-#let _base_font_size = 8.1pt
-#let _density = 0.8
+#let _base_font_size = 7.879pt
+#let _density = 0.75
 #let _diff = 1.2
 #let _use_link_symbol = true
 #let _use_link_symbol_for_header = false
@@ -301,15 +301,7 @@
         ),
         _item(
           _nolink(
-            [B.S. Computer Science],
-            [University of Utah],
-            [2021 - 2025]
-          ),
-          ()
-        ),
-          _item(
-          _nolink(
-            [Mathematics Minor],
+            [B.S. Computer Science, Mathematics Minor],
             [University of Utah],
             [2021 - 2025]
           ),
@@ -384,18 +376,18 @@
           clarify concepts.],
           )
         ),
-        _item(
-          _nolink(
-          [Capstone Teaching Assistant],
-          [University of Utah],
-          [August 2025 - December 2025]
-          ),
-          (
-            [Met weekly with student teams to provide specific feedback on
-          projects.],
-          [Assisted in maintaining course materials, and graded assignments.],
-          )
-        ),
+        // _item(
+        //   _nolink(
+        //   [Capstone Teaching Assistant],
+        //   [University of Utah],
+        //   [August 2025 - December 2025]
+        //   ),
+        //   (
+        //     [Met weekly with student teams to provide specific feedback on
+        //   projects.],
+        //   [Assisted in maintaining course materials, and graded assignments.],
+        //   )
+        // ),
         _item(
           _nolink(
             [Software Practice II Teaching Assistant],
@@ -421,233 +413,221 @@
             [Supervised a structured learning environment for children.],
           )
         ),
-        _item(
-          _nolink(
-            [Undergraduate Research Assistant],
-            [University of Utah],
-            [March 2022 - July 2022]
-          ),
-          (
-            [Simulated micro-fibers and fibrous materials using SOLIDWORKS to
-          contribute to research projects.],
-            [Authored comprehensive technical reports with LaTeX to document
-          research findings and methodologies.],
-          )
-        ),
+        // _item(
+        //   _nolink(
+        //     [Undergraduate Research Assistant],
+        //     [University of Utah],
+        //     [March 2022 - July 2022]
+        //   ),
+        //   (
+        //     [Simulated micro-fibers and fibrous materials using SOLIDWORKS to
+        //   contribute to research projects.],
+        //     [Authored comprehensive technical reports with LaTeX to document
+        //   research findings and methodologies.],
+        //   )
+        // ),
       )
     ),
-    _block([Projects],
+     _block([Projects],
       (
         _item(
           _nolink(
-            [Full Stack Photo Sharing App (Capstone Project) - BeThere],
-            [C\#, React],
-            [August 2024 – Present]
+        [Full Stack Photo Sharing App (Capstone Project) - BeThere],
+        [C\#, React],
+        [August 2024 – Present]
           ),
-          ([Developed a backend server with a modular REST API to handle photo uploads, user management, and clustering based on geolocation data.],
-          [Integrated PostgreSQL for robust data storage and implemented efficient database operations with LINQ.],
-          [Built an access control system linking users to clusters, allowing selective photo album visibility based on user presence at locations.],
+          (
+        [Developed a backend server with a modular REST API to handle photo uploads, user management, and clustering based on geolocation data.],
+        [Integrated PostgreSQL for robust data storage with LINQ, and built access control linking users to clusters for selective album visibility by location.],
+          )
+        ),
+        _item(
+          _nolink(
+        [Full JPL Compiler],
+        [C++, Rust],
+        [January 2025 – May 2025]
+          ),
+          (
+        [Developed a full compiler for the JPL programming language.],
+        [Implemented the full pipeline (lexing, parsing, semantic analysis, optimization, codegen) including type checking, scope management, and code optimizations.],
           )
         ),
         _item(
           _link(
-            [Rust GUI for ELO Media Ratings],
-            [Rust],
-            "https://github.com/EdwardStanford7/media_rating",
-            [July 2024 - Present]
+        [Rust GUI for ELO Media Ratings],
+        [Rust],
+        "https://github.com/EdwardStanford7/media_rating",
+        [July 2024 - Present]
           ),
           (
-            [Implemented an Elo rating system for media ranking and viewing using egui.],
-            [Developed data persistence features with spreadsheet output for seamless data transfer.],
-            [Automated image fetching and integrated UI for a user-friendly experience.],
+        [Implemented an Elo rating system for media ranking and viewing using egui.],
+        [Added data persistence with spreadsheet output, plus automated image fetching and UI integration for a smoother workflow.],
           )
       ),
         _item(
           _link(
-            [Path of Memories Gamejam],
-            [C\# with Unity],
-            "https://github.com/EdwardStanford7/Path-of-Memories",
-            [January 2023]
+        [Path of Memories Gamejam],
+        [C\# with Unity],
+        "https://github.com/EdwardStanford7/Path-of-Memories",
+        [January 2023]
           ),
           (
-            [Built a 2D platformer game featuring a robust dialogue system and player progression tracking.],
-            [Added diverse player abilities including wall climbing, double jumping, and dashing.],
-            [Integrated character interactions and level design to enhance player engagement.],
+        [Built a 2D platformer featuring a robust dialogue system, player progression tracking, and character-driven interactions/level design.],
+        [Added diverse player abilities including wall climbing, double jumping, and dashing.],
           )
         ),
+        // _item(
+        //   _link(
+        // [Scamper Gamejam],
+        // [C\# with Unity],
+        // "https://github.com/Jakeo915/ScamperGameJam",
+        // [October 2022]
+        //   ),
+        //   (
+        // [Developed 2D side-scrolling mechanics with advanced jump buffer and coyote time for seamless player control.],
+        // [Managed layer transitions/animations and collaborated with a team to integrate game assets and maintain cohesive design.],
+        //   )
+        // ),
+        // _item(
+        //   _nolink(
+        // [Prime in Five Gamejam],
+        // [C\# with Unity],
+        // [September 2022]
+        //   ),
+        //   (
+        // [Created a dynamic gameplay experience with AI, procedural enemy generation, and complex health systems.],
+        // [Programmed top-down movement, a timer-based win condition, and player interactions to ensure engaging gameplay flow.],
+        //   )
+        // ),
         _item(
-          _link(
-            [Scamper Gamejam],
-            [C\# with Unity],
-            "https://github.com/Jakeo915/ScamperGameJam",
-            [October 2022]
+          _nolink(
+        [Circuit Simulator QT Application],
+        [C++],
+        [April 2023]
           ),
           (
-            [Developed 2D side-scrolling mechanics with advanced jump buffer and coyote time for seamless player control.],
-            [Managed layer transitions and animations for a smooth and immersive visual experience.],
-            [Collaborated with a team to integrate game assets and ensure cohesive design elements.],
+        [Designed an educational circuit-logic game with an intuitive, interactive UI and user-customizable gates.],
+        [Implemented save functionality using JSON for persistent user data.],
           )
         ),
         _item(
           _nolink(
-            [Prime in Five Gamejam],
-            [C\# with Unity],
-            [September 2022]
+        [LMS Website],
+        [C\#],
+        [April 2023]
           ),
           (
-            [Created a dynamic gameplay experience with AI, procedural enemy generation, and complex health systems.],
-            [Programmed top-down player movement mechanics and integrated a timer-based win condition.],
-            [Designed and implemented user interactions to ensure engaging gameplay flow.],
+        [Developed a learning management system leveraging a MariaDB backend.],
+        [Ensured seamless front-end/back-end integration using .NET technologies, including user authentication and course management.],
           )
         ),
         _item(
           _nolink(
-            [Full JPL Compiler],
-            [C++, Rust],
-            [January 2025 – May 2025]
+        [Sprite Editor QT Application],
+        [C++],
+        [March 2023]
           ),
           (
-            [Developed a full compiler for the JPL programming language.],
-            [Implemented lexical analysis, parsing, semantic analysis, optimization, and code generation.],
-            [Implemented advanced features including type checking, scope management, and code optimizations.],
+        [Created a comprehensive sprite editor with detailed UI and user interactions.],
+        [Supported multiple image formats/export options and implemented advanced drawing tools with color manipulation features.],
           )
         ),
         _item(
           _nolink(
-            [Circuit Simulator QT Application],
-            [C++],
-            [April 2023]
+        [Snake Network Game],
+        [C\#],
+        [October 2022 – December 2022]
           ),
           (
-            [Designed an educational game simulating circuit logic with user-customizable gates.],
-            [Managed save functionality using JSON for persistent user data.],
-            [Developed an intuitive UI for interactive learning experiences.],
+        [Built a networked snake game with distinct server and client implementations.],
+        [Managed multiplayer functionality with real-time synchronization.], 
           )
         ),
-        _item(
-          _nolink(
-            [LMS Website],
-            [C\#],
-            [April 2023]
-          ),
-          (
-            [Developed a learning management system leveraging a MariaDB backend.],
-            [Ensured seamless integration between front-end and back-end using .NET technologies.],
-            [Implemented user authentication and course management features.],
-          )
-        ),
-        _item(
-          _nolink(
-            [Sprite Editor QT Application],
-            [C++],
-            [March 2023]
-          ),
-          (
-            [Created a comprehensive sprite editor with detailed UI and user interactions.],
-            [Supported multiple image formats and export options.],
-            [Implemented advanced drawing tools and color manipulation features.],
-          )
-        ),
-        _item(
-          _nolink(
-            [Snake Network Game],
-            [C\#],
-            [October 2022 – December 2022]
-          ),
-          (
-            [Built a networked snake game with distinct server and client implementations.],
-            [Managed multiplayer functionality with real-time synchronization.], 
-          )
-        ),
-        _item(
-          _nolink(
-            [Spreadsheet Application],
-            [C\#],
-            [August 2022 – October 2022]
-          ),
-          (
-            [Developed a user-friendly spreadsheet tool following the MVC design pattern.],
-            [Integrated .NET MAUI for cross-platform compatibility.],
-            [Enhanced the user experience with interactive data manipulation features.],
-          )
-        ),
-        _item(
-          _nolink(
-            [Tower Defense Game],
-            [Java],
-            [October 2021 – May 2022]
-          ),
-          (
-            [Designed a tower defense game employing OOP concepts like inheritance and polymorphism.],
-            [Balanced gameplay mechanics for progressive difficulty scaling.],  
-          )
-        ),
+        // _item(
+        //   _nolink(
+        // [Spreadsheet Application],
+        // [C\#],
+        // [August 2022 – October 2022]
+        //   ),
+        //   (
+        // [Developed a user-friendly spreadsheet tool following the MVC design pattern.],
+        // [Integrated .NET MAUI for cross-platform compatibility and enhanced UX with interactive data manipulation.],
+        //   )
+        // ),
+        // _item(
+        //   _nolink(
+        // [Tower Defense Game],
+        // [Java],
+        // [October 2021 – May 2022]
+        //   ),
+        //   (
+        // [Designed a tower defense game employing OOP concepts like inheritance and polymorphism.],
+        // [Balanced gameplay mechanics for progressive difficulty scaling.],  
+        //   )
+        // ),
       )
-    ),
-    _block([Misc],
+        ),
+        _block([Misc],
       (
         _item(
           _link(
-            [Advent of Code 2025],
-            [Rust],
-            "https://github.com/EdwardStanford7/advent_of_code_2025",
-            [December 2025 - January 2026]
+        [Advent of Code 2025],
+        [Rust],
+        "https://github.com/EdwardStanford7/advent_of_code_2025",
+        [December 2025 - January 2026]
           ),
           (
-            [Solved 22 challenges focusing on dynamic programming, graph algorithms, and geometric problems.],
-            [Improved proficiency in Rust through practical problem-solving applications.],
-            [Implemented efficient data structures and algorithms to optimize solution performance.],
+        [Solved 22 challenges focusing on dynamic programming, graph algorithms, and geometric problems.],
+        [Improved Rust proficiency while implementing efficient data structures/algorithms to optimize solution performance.],
           )
         ),
+        // _item(
+        //   _nolink(
+        // [Advent of Code 2020],
+        // [C++],
+        // [December 2020 – May 2022]
+        //   ),
+        //   (
+        // [Solved 48 challenges focusing on recursion, encryption, and data structures.],
+        // [Enhanced problem-solving skills while applying OOP principles to build modular and maintainable solutions.],
+        //   )
+        // ),
         _item(
           _nolink(
-            [Advent of Code 2020],
-            [C++],
-            [December 2020 – May 2022]
+        [Project Euler],
+        [C++, Python],
+        [August 2020 – December 2020]
           ),
           (
-            [Solved 48 challenges focusing on recursion, encryption, and data structures.],
-            [Enhanced problem-solving skills with complex algorithm implementations.],
-            [Applied OOP principles to build modular and maintainable solutions.],
-          )
-        ),
-        _item(
-          _nolink(
-            [Project Euler],
-            [C++, Python],
-            [August 2020 – December 2020]
-          ),
-          (
-            [Tackled 59 mathematics and computation-intensive problems.],
-            [Employed efficient algorithms to handle large-scale numerical challenges.],
-            [Strengthened mathematical reasoning and coding proficiency.],
+        [Tackled 59 mathematics and computation-intensive problems.],
+        [Employed efficient algorithms for large-scale numerical challenges, strengthening mathematical reasoning and coding proficiency.],
           )
         ),
       )
-    ),
-    _block([Technology],
+        ),
+        _block([Technology],
       (
         _item(
           _nolink(
-            [Experienced],
-            [],
-            []
+        [Experienced],
+        [],
+        []
           ),
           (
-            [C++, Rust, C, C\#, Python, Java, SQL, VSCode, Qt, Docker, Linux, MacOS],
+        [C++, Rust, C, C\#, SQL, VSCode, Qt, Docker, Linux, MacOS],
           )
         ),
         _item(
           _nolink(
-            [Proficient],
-            [],
-            []
+        [Proficient],
+        [],
+        []
           ),
           (
-            [Latex, Typst, R, Git, MS Visual Studio, MS Office, XCode],
+        [Python, Java, Latex, Typst, R, Git, MS Visual Studio, MS Office, XCode],
           )
         ),
       )
-    ),
-  )
-)
+        ),
+      )
+    )
