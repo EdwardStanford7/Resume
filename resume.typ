@@ -17,7 +17,7 @@
 #let _use_link_symbol = true
 #let _use_link_symbol_for_header = false
 #let _block_body_indentation = 3
-#let _dark_mode = true
+#let _dark_mode = false
 
 #let _black = rgb("#151515")
 #let _darkmode_white = rgb("#eee")
@@ -25,7 +25,7 @@
 
 
 #let _link_color = if _dark_mode {
-  rgb("#eae")
+  rgb("#f983f9")
 } else {
   _navy_blue
 }
@@ -57,10 +57,10 @@
   fill: _page_background
 )
 
-#let _link_symbol = "↗" //"🔗"
+#let _link_symbol = "🔗"
 #set text(
   _text_color,
-  font: "DejaVu Sans",
+  font: "Times New Roman",
   _base_font_size,
 )
 #set par(
@@ -270,8 +270,8 @@
       smallcaps[#text(size: 32pt)[*#_name*]],
       smallcaps[
         #h(1fr) #_header_link(_ghlink)\
-        #h(1fr) #_phone\
-        #h(1fr) #_email
+        #h(1fr) #_email\
+        #h(1fr) #_phone
       ]
     )
   }
@@ -284,28 +284,344 @@
 }
 
 #_resume(
-  [Robert Morelli],
-  "robertmorelli",
-  [robertondino\@outlook.com],
-  [385 315 0034],
+  [Edward Stanford],
+  "edwardstanford7",
+  [edwardstanford7\@gmail.com],
+  [801 651 4982],
   (
     _block([Education],
       (
         _item(
           _nolink(
-            [B.S. Computer Science (in progress)],
+            [M.S. Computer Science],
             [University of Utah],
-            [2022 - 2027 _expected_]
+            [2025 - 2026 _expected_]
           ),
           ()
         ),
         _item(
           _nolink(
-            [A.S. Computer Science (incomplete)],
-            [Salt Lake Community College],
-            [2019 - 2022 _transferred_]
+            [B.S. Computer Science],
+            [University of Utah],
+            [2021 - 2025]
           ),
           ()
+        ),
+          _item(
+          _nolink(
+            [Mathematics Minor],
+            [University of Utah],
+            [2021 - 2025]
+          ),
+          ()
+        ),
+         _item(
+          _nolink(
+            [Certificate in Data Science],
+            [University of Utah],
+            [2021 - 2025]
+          ),
+          ()
+        ),
+      )
+    ),
+    _block([Awards & Honors],
+      (
+        _item(
+          _nolink(
+            [Grateful Alumni Scholarship],
+            [University of Utah],
+            [Fall 2024]
+          ),
+          ()
+        ),
+        _item(
+          _nolink(
+            [Kiri Wagstaff AI/ML Scholarship],
+            [University of Utah],
+            [Fall 2024]
+          ),
+          ()
+        ),
+        _item(
+          _nolink(
+            [Richard B. & Brenda R. Brown Endowed Scholarship],
+            [University of Utah],
+            [Fall 2024]
+          ),
+          ()
+        ),
+        _item(
+          _nolink(
+            [College of Engineering Departmental Scholarship],
+            [University of Utah],
+            [Fall 2023, Spring 2024]
+          ),
+          ()
+        ),
+        _item(
+          _nolink(
+            [Dean's List],
+            [University of Utah],
+            [2021 - 2025 _(all semesters)_]
+          ),
+          ()
+        ),
+      )
+    ),
+    _block([Experience],
+      (
+        _item(
+          _nolink(
+          [Computer Systems Teaching Assistant],
+          [University of Utah],
+          [January 2026 - Present]
+          ),
+          (
+            [Helped over 175 students by managing Piazza discussions, grading
+          assignments, and provided detailed feedback on student submissions.],
+          [Ran labs and held help hours for students to address questions and
+          clarify concepts.],
+          )
+        ),
+        _item(
+          _nolink(
+          [Capstone Teaching Assistant],
+          [University of Utah],
+          [August 2025 - December 2025]
+          ),
+          (
+            [Met weekly with student teams to provide specific feedback on
+          projects.],
+          [Assisted in maintaining course materials, and graded assignments.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Software Practice II Teaching Assistant],
+            [University of Utah],
+            [August 2023 - May 2025]
+          ),
+          (
+            [Supported over 200 students by managing Piazza discussions, grading
+          assignments, and provided detailed feedback on student submissions.],
+          [Ran labs and held help hours for students to address questions and
+          clarify concepts.],
+          )
+        ),
+        _item(
+          _nolink(
+            [GREAT Elementary School Summer Camp Instructor],
+            [University of Utah],
+            [June 2024 - July 2024]
+          ),
+          (
+            [Taught robotics concepts to elementary students with hands-on
+          activities.],
+            [Supervised a structured learning environment for children.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Undergraduate Research Assistant],
+            [University of Utah],
+            [March 2022 - July 2022]
+          ),
+          (
+            [Simulated micro-fibers and fibrous materials using SOLIDWORKS to
+          contribute to research projects.],
+            [Authored comprehensive technical reports with LaTeX to document
+          research findings and methodologies.],
+          )
+        ),
+      )
+    ),
+    _block([Projects],
+      (
+        _item(
+          _nolink(
+            [Full Stack Photo Sharing App (Capstone Project) - BeThere],
+            [C\#, React],
+            [August 2024 – Present]
+          ),
+          ([Developed a backend server with a modular REST API to handle photo uploads, user management, and clustering based on geolocation data.],
+          [Integrated PostgreSQL for robust data storage and implemented efficient database operations with LINQ.],
+          [Built an access control system linking users to clusters, allowing selective photo album visibility based on user presence at locations.],
+          )
+        ),
+        _item(
+          _link(
+            [Rust GUI for ELO Media Ratings],
+            [Rust],
+            "https://github.com/EdwardStanford7/media_rating",
+            [July 2024 - Present]
+          ),
+          (
+            [Implemented an Elo rating system for media ranking and viewing using egui.],
+            [Developed data persistence features with spreadsheet output for seamless data transfer.],
+            [Automated image fetching and integrated UI for a user-friendly experience.],
+          )
+      ),
+        _item(
+          _link(
+            [Path of Memories Gamejam],
+            [C\# with Unity],
+            "https://github.com/EdwardStanford7/Path-of-Memories",
+            [January 2023]
+          ),
+          (
+            [Built a 2D platformer game featuring a robust dialogue system and player progression tracking.],
+            [Added diverse player abilities including wall climbing, double jumping, and dashing.],
+            [Integrated character interactions and level design to enhance player engagement.],
+          )
+        ),
+        _item(
+          _link(
+            [Scamper Gamejam],
+            [C\# with Unity],
+            "https://github.com/Jakeo915/ScamperGameJam",
+            [October 2022]
+          ),
+          (
+            [Developed 2D side-scrolling mechanics with advanced jump buffer and coyote time for seamless player control.],
+            [Managed layer transitions and animations for a smooth and immersive visual experience.],
+            [Collaborated with a team to integrate game assets and ensure cohesive design elements.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Prime in Five Gamejam],
+            [C\# with Unity],
+            [September 2022]
+          ),
+          (
+            [Created a dynamic gameplay experience with AI, procedural enemy generation, and complex health systems.],
+            [Programmed top-down player movement mechanics and integrated a timer-based win condition.],
+            [Designed and implemented user interactions to ensure engaging gameplay flow.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Full JPL Compiler],
+            [C++, Rust],
+            [January 2025 – May 2025]
+          ),
+          (
+            [Developed a full compiler for the JPL programming language.],
+            [Implemented lexical analysis, parsing, semantic analysis, optimization, and code generation.],
+            [Implemented advanced features including type checking, scope management, and code optimizations.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Circuit Simulator QT Application],
+            [C++],
+            [April 2023]
+          ),
+          (
+            [Designed an educational game simulating circuit logic with user-customizable gates.],
+            [Managed save functionality using JSON for persistent user data.],
+            [Developed an intuitive UI for interactive learning experiences.],
+          )
+        ),
+        _item(
+          _nolink(
+            [LMS Website],
+            [C\#],
+            [April 2023]
+          ),
+          (
+            [Developed a learning management system leveraging a MariaDB backend.],
+            [Ensured seamless integration between front-end and back-end using .NET technologies.],
+            [Implemented user authentication and course management features.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Sprite Editor QT Application],
+            [C++],
+            [March 2023]
+          ),
+          (
+            [Created a comprehensive sprite editor with detailed UI and user interactions.],
+            [Supported multiple image formats and export options.],
+            [Implemented advanced drawing tools and color manipulation features.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Snake Network Game],
+            [C\#],
+            [October 2022 – December 2022]
+          ),
+          (
+            [Built a networked snake game with distinct server and client implementations.],
+            [Managed multiplayer functionality with real-time synchronization.], 
+          )
+        ),
+        _item(
+          _nolink(
+            [Spreadsheet Application],
+            [C\#],
+            [August 2022 – October 2022]
+          ),
+          (
+            [Developed a user-friendly spreadsheet tool following the MVC design pattern.],
+            [Integrated .NET MAUI for cross-platform compatibility.],
+            [Enhanced the user experience with interactive data manipulation features.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Tower Defense Game],
+            [Java],
+            [October 2021 – May 2022]
+          ),
+          (
+            [Designed a tower defense game employing OOP concepts like inheritance and polymorphism.],
+            [Balanced gameplay mechanics for progressive difficulty scaling.],  
+          )
+        ),
+      )
+    ),
+    _block([Misc],
+      (
+        _item(
+          _link(
+            [Advent of Code 2025],
+            [Rust],
+            "https://github.com/EdwardStanford7/advent_of_code_2025",
+            [December 2025 - January 2026]
+          ),
+          (
+            [Solved 22 challenges focusing on dynamic programming, graph algorithms, and geometric problems.],
+            [Improved proficiency in Rust through practical problem-solving applications.],
+            [Implemented efficient data structures and algorithms to optimize solution performance.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Advent of Code 2020],
+            [C++],
+            [December 2020 – May 2022]
+          ),
+          (
+            [Solved 48 challenges focusing on recursion, encryption, and data structures.],
+            [Enhanced problem-solving skills with complex algorithm implementations.],
+            [Applied OOP principles to build modular and maintainable solutions.],
+          )
+        ),
+        _item(
+          _nolink(
+            [Project Euler],
+            [C++, Python],
+            [August 2020 – December 2020]
+          ),
+          (
+            [Tackled 59 mathematics and computation-intensive problems.],
+            [Employed efficient algorithms to handle large-scale numerical challenges.],
+            [Strengthened mathematical reasoning and coding proficiency.],
+          )
         ),
       )
     ),
@@ -313,12 +629,12 @@
       (
         _item(
           _nolink(
-            [Expert],
+            [Experienced],
             [],
             []
           ),
           (
-            [Zig, Dart, JS, WASM (WAT), CSS, SVG, GitHub Actions, MIPS asm],
+            [C++, Rust, C, C\#, Python, Java, SQL, VSCode, Qt, Docker, Linux, MacOS],
           )
         ),
         _item(
@@ -328,230 +644,7 @@
             []
           ),
           (
-            [Angular, C, C\#, Cordova, Flutter, HTML, Java, Python, TS, Typst],
-          )
-        ),
-        _item(
-          _nolink(
-            [Familiar],
-            [],
-            []
-          ),
-          (
-            [Bash, C++, CICD, CircleCi, Laravel, Metal, MongoDB,  OpenCL, PHP, Ruby, Rust, Swift],
-          )
-        ),
-      )
-    ),
-    _block([Experience],
-      (
-        _item(
-          _nolink(
-            [Research Assistant],
-            [University of Utah],
-            [Nov 2025 - present]
-          ),
-          (
-            [Benchmarking gradual typing in Meta's Cinder variant of python],
-          )
-        ),
-        _item(
-          _nolink(
-            [Teaching Assistant],
-            [University of Utah],
-            [Apr 2025 - present]
-          ),
-          (
-            [Leading labs, grading, assisting students for COMP 1020],
-          )
-        ),
-        _item(
-          _nolink(
-            [Software Engineer/Dev ops],
-            [Stutor Inc.],
-            [Sep 2023 - Apr 2024]
-          ),
-          (
-            [Architected CICD pipeline],
-            [Optimized DB indexes, reducing query times by up to 8x],
-          )
-        ),
-        _item(
-          _nolink(
-            [Web Developer/Dev Ops],
-            [Jerran Software Solutions],
-            [Apr 2022 - Sep 2023]
-          ),
-          (
-            [Overhauled LDS MTC QA/CICD workflow, substantially reducing regression burden],
-            [Rewrote Embark app startup to reduce first time loading by up to 50%]
-          )
-        ),
-        _item(
-          _nolink(
-            [Research Assistant Intern],
-            [Earl Keefe PhD],
-            [Nov 2020 - Jun 2021]
-          ),
-          (
-            [Visualizations for anthropology research],
-          )
-        ),
-        _item(
-          _nolink(
-            [Web Dev. Intern],
-            [Frelii],
-            [May 2019 - Sep 2019]
-          ),
-          (
-            [Web scraping SNPedia for AI training],
-          )
-        ),
-      )
-    ),
-    _block([Projects],
-      (
-        _item(
-          _link(
-            [Optimized bead/gravity sort],
-            [zig],
-            "https://github.com/robertmorelli/bead_sort_u5x32"
-            ,[2026]
-          ),
-          (
-            [Bead sort done via popcount intrinsics and bit matrix transpositions. Only for 32 u5s],
-          )
-        ),
-        _item(
-          _link(
-            [Tiny nkey rollover tester OS],
-            [zig],
-            "https://github.com/robertmorelli/TinyNKRO.OS",
-            [2025]
-          ),
-          (
-            [Ported as OS class assignment to zig and then added keyboard input and vga output],
-          )
-        ),
-        _item(
-          _link(
-            [Fast approximate change of base],
-            [python],
-            "https://github.com/robertmorelli/messy_print",
-            [2025]
-          ),
-          (
-            [Novel algorithm for printing numbers larger than $10^(10^5)$ efficiently],
-          )
-        ),
-        _item(
-          _link(
-            [Automated resume],
-            [typst],
-            "https://robertmorelli.github.io/resume/",
-            [2025]
-          ),
-          (
-            [CICD typst resume],
-          )
-        ),
-        _item(
-          _link(
-            [Held-karp],
-            [zig],
-            "https://github.com/robertmorelli/held_karp",
-            [2025]
-          ),
-          (
-            [Well optimized bitset based Held-karp TSP algorithm],
-          )
-        ),
-        _item(
-          _link(
-            [Spreadsheet formulas to DLL compiler],
-            [c],
-            "https://github.com/robertmorelli/dll_compiler",
-            [2025]
-          ),
-          (
-            [A spreadsheet which compiles formulas to a DLL which can be used in DOTNET projects],
-          )
-        ),
-        _item(
-          _link(
-            [Color alchemy],
-            [qt c++],
-            "https://robertmorelli.github.io/color_alchemy/",
-            [2024]
-          ),
-          (
-            [A game for learning color mixing],
-          )
-        ),
-        _item(
-          _link(
-            [CSS grid examples],
-            [css html],
-            "https://robertmorelli.github.io/grid_examples/",
-            [2024]
-          ),
-          (
-            [Examples of common design patterns implemented with css grid as a good reference],
-          )
-        ),
-        _item(
-          _link(
-            [Randomized Pacman game],
-            [java],
-            "https://github.com/robertmorelli/randomized_pacman",
-            [2021]
-          ),
-          (
-            [Pacman game using some algorithms from my 2420 class: A\*, DFS, BFS, Union find],
-          )
-        )
-      ),
-    ),
-    _block([Misc],
-      (
-        
-        _item(
-          _link(
-            [Added code field to instruction decoder],
-            [MARS IDE],
-            "https://github.com/dpetersanderson/MARS",
-            [2025]
-          ),
-          (),
-        ),
-        _item(
-          _link(
-            [\#12 Ranked team at Rocky Mountain Regional Contest],
-            [ICPC],
-            "https://rmc25.kattis.com/contests/rmc25/standings/site",
-            [2025]
-          ),
-          (),
-        ),
-        _item(
-          _nolink(
-            [Jane Street Leaderboard],
-            [],
-            []
-          ),
-          (
-            _link(
-              [Number Cross 5],
-              [],
-              "https://www.janestreet.com/puzzles/number-cross-5-solution/",
-              [May 2025]
-            ),
-            _link(
-              [Sum One, Somewhere],
-              [],
-              "https://www.janestreet.com/puzzles/sum-one-somewhere-solution/",
-              [Apr 2025]
-            ),
+            [Latex, Typst, R, Git, MS Visual Studio, MS Office, XCode],
           )
         ),
       )

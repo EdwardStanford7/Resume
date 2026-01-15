@@ -1,5 +1,3 @@
-
-
 website:
 	ls
 	typst c resume.typ
