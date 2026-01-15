@@ -57,7 +57,17 @@
   fill: _page_background
 )
 
-#let _link_symbol = "🔗"
+#let _link_symbol = [
+  ~#box(
+    image(
+      "assets/link.png",
+      width: .75em,
+      height: .75em,
+    ),
+    baseline: .1em,
+  )
+]
+
 #set text(
   _text_color,
   font: "Times New Roman",
@@ -287,7 +297,7 @@
   [Edward Stanford],
   "edwardstanford7",
   [edwardstanford7\@gmail.com],
-  [801 651 4982],
+  [801-651-4982],
   (
     _block([Education],
       (
