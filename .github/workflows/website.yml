@@ -10,20 +10,30 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
+      - name: Install website build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils pdf2svg
+
       - uses: typst-community/setup-typst@v4
         with:
           typst-version: 0.13.0
-          allow-prereleases: true
+          allow-prereleases: false
+
       - name: "make website"
         run: make website
+
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add docs
-          git commit -a -m "Make Website"
+          git add -A docs
+          git commit -m "Make Website" || echo "No changes to commit"
+
       - name: Push changes
+        if: github.actor != 'github-actions[bot]'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
