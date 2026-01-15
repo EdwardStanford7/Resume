@@ -9,6 +9,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -22,7 +23,14 @@ jobs:
           typst-version: 0.13.0
           allow-prereleases: false
 
-      - name: "make website"
+      - name: Make fonts available to Typst
+        run: |
+          echo "TYPST_FONT_PATHS=${GITHUB_WORKSPACE}/fonts" >> $GITHUB_ENV
+
+      - name: Debug fonts (optional)
+        run: typst fonts | sed -n '1,200p'
+
+      - name: make website
         run: make website
 
       - name: Commit files
@@ -38,4 +46,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-  

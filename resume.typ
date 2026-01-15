@@ -70,7 +70,7 @@
 
 #set text(
   _text_color,
-  font: "Times New Roman",
+  font: "Liberation Serif",
   _base_font_size,
 )
 #set par(
