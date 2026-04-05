@@ -386,18 +386,6 @@
           clarify concepts.],
           )
         ),
-        // _item(
-        //   _nolink(
-        //   [Capstone Teaching Assistant],
-        //   [University of Utah],
-        //   [August 2025 - December 2025]
-        //   ),
-        //   (
-        //     [Met weekly with student teams to provide specific feedback on
-        //   projects.],
-        //   [Assisted in maintaining course materials, and graded assignments.],
-        //   )
-        // ),
         _item(
           _nolink(
             [Software Practice II Teaching Assistant],
@@ -413,7 +401,7 @@
         ),
         _item(
           _nolink(
-            [GREAT Elementary School Summer Camp Instructor],
+            [GREAT Summer Camp Instructor (4th-6th Grade)],
             [University of Utah],
             [June 2024 - July 2024]
           ),
@@ -423,19 +411,6 @@
             [Supervised a structured learning environment for children.],
           )
         ),
-        // _item(
-        //   _nolink(
-        //     [Undergraduate Research Assistant],
-        //     [University of Utah],
-        //     [March 2022 - July 2022]
-        //   ),
-        //   (
-        //     [Simulated micro-fibers and fibrous materials using SOLIDWORKS to
-        //   contribute to research projects.],
-        //     [Authored comprehensive technical reports with LaTeX to document
-        //   research findings and methodologies.],
-        //   )
-        // ),
       )
     ),
      _block([Projects],
@@ -486,29 +461,6 @@
         [Added diverse player abilities including wall climbing, double jumping, and dashing.],
           )
         ),
-        // _item(
-        //   _link(
-        // [Scamper Gamejam],
-        // [C\# with Unity],
-        // "https://github.com/Jakeo915/ScamperGameJam",
-        // [October 2022]
-        //   ),
-        //   (
-        // [Developed 2D side-scrolling mechanics with advanced jump buffer and coyote time for seamless player control.],
-        // [Managed layer transitions/animations and collaborated with a team to integrate game assets and maintain cohesive design.],
-        //   )
-        // ),
-        // _item(
-        //   _nolink(
-        // [Prime in Five Gamejam],
-        // [C\# with Unity],
-        // [September 2022]
-        //   ),
-        //   (
-        // [Created a dynamic gameplay experience with AI, procedural enemy generation, and complex health systems.],
-        // [Programmed top-down movement, a timer-based win condition, and player interactions to ensure engaging gameplay flow.],
-        //   )
-        // ),
         _item(
           _nolink(
         [Circuit Simulator QT Application],
@@ -553,28 +505,6 @@
         [Managed multiplayer functionality with real-time synchronization.], 
           )
         ),
-        // _item(
-        //   _nolink(
-        // [Spreadsheet Application],
-        // [C\#],
-        // [August 2022 – October 2022]
-        //   ),
-        //   (
-        // [Developed a user-friendly spreadsheet tool following the MVC design pattern.],
-        // [Integrated .NET MAUI for cross-platform compatibility and enhanced UX with interactive data manipulation.],
-        //   )
-        // ),
-        // _item(
-        //   _nolink(
-        // [Tower Defense Game],
-        // [Java],
-        // [October 2021 – May 2022]
-        //   ),
-        //   (
-        // [Designed a tower defense game employing OOP concepts like inheritance and polymorphism.],
-        // [Balanced gameplay mechanics for progressive difficulty scaling.],  
-        //   )
-        // ),
       )
         ),
         _block([Misc],
@@ -591,17 +521,6 @@
         [Improved Rust proficiency while implementing efficient data structures/algorithms to optimize solution performance.],
           )
         ),
-        // _item(
-        //   _nolink(
-        // [Advent of Code 2020],
-        // [C++],
-        // [December 2020 – May 2022]
-        //   ),
-        //   (
-        // [Solved 48 challenges focusing on recursion, encryption, and data structures.],
-        // [Enhanced problem-solving skills while applying OOP principles to build modular and maintainable solutions.],
-        //   )
-        // ),
         _item(
           _nolink(
         [Project Euler],
