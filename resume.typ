@@ -377,7 +377,7 @@
           _nolink(
           [Computer Systems Teaching Assistant],
           [University of Utah],
-          [January 2026 - Present]
+          [January 2026 - May 2026]
           ),
           (
             [Helped over 175 students by managing Piazza discussions, grading
@@ -416,10 +416,22 @@
      _block([Projects],
       (
         _item(
+          _link(
+        [Goldshelf - Fullstack Ranking System],
+        [TypeScript],
+        "goldshelf.net",
+        [July 2024 - Present]
+          ),
+          (
+        [Developed a full-stack web application for ranking and reviewing content of any user defined type. Hosted on Cloudflare with D1 and R2 for database and storage.],
+        [Custom self repairing binary search insertion to maintain a sorted list of user defined content.],
+          )
+      ),
+        _item(
           _nolink(
         [Full Stack Photo Sharing App (Capstone Project) - BeThere],
         [C\#, React],
-        [August 2024 – Present]
+        [August 2024 – May 2025]
           ),
           (
         [Developed a backend server with a modular REST API to handle photo uploads, user management, and clustering based on geolocation data.],
@@ -437,18 +449,6 @@
         [Implemented the full pipeline (lexing, parsing, semantic analysis, optimization, codegen) including type checking, scope management, and code optimizations.],
           )
         ),
-        _item(
-          _link(
-        [Rust GUI for ELO Media Ratings],
-        [Rust],
-        "https://github.com/EdwardStanford7/media_rating",
-        [July 2024 - Present]
-          ),
-          (
-        [Implemented an Elo rating system for media ranking and viewing using egui.],
-        [Added data persistence with spreadsheet output, plus automated image fetching and UI integration for a smoother workflow.],
-          )
-      ),
         _item(
           _link(
         [Path of Memories Gamejam],
