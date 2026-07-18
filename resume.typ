@@ -423,7 +423,7 @@
         [July 2024 - Present]
           ),
           (
-        [Developed a full-stack web application for ranking and reviewing content of any user defined type. Hosted on Cloudflare with D1 and R2 for database and storage.],
+        [Developed a full-stack web application for ranking and reviewing content of any user defined type. Hosted on Cloudflare with D1/R2 database/storage.],
         [Custom self repairing binary search insertion to maintain a sorted list of user defined content.],
           )
       ),
