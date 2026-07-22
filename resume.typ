@@ -419,7 +419,7 @@
           _link(
         [Goldshelf - Fullstack Ranking System],
         [TypeScript],
-        "goldshelf.net",
+        "https://goldshelf.net",
         [July 2024 - Present]
           ),
           (
