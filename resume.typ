@@ -317,7 +317,7 @@
           ),
           ()
         ),
-         _item(
+        _item(
           _nolink(
             [Certificate in Data Science],
             [University of Utah],
@@ -325,47 +325,11 @@
           ),
           ()
         ),
-      )
-    ),
-    _block([Awards & Honors],
-      (
         _item(
           _nolink(
-            [Grateful Alumni Scholarship],
+            [Dean's List; recipient of multiple merit-based scholarships],
             [University of Utah],
-            [Fall 2024]
-          ),
-          ()
-        ),
-        _item(
-          _nolink(
-            [Kiri Wagstaff AI/ML Scholarship],
-            [University of Utah],
-            [Fall 2024]
-          ),
-          ()
-        ),
-        _item(
-          _nolink(
-            [Richard B. & Brenda R. Brown Endowed Scholarship],
-            [University of Utah],
-            [Fall 2024]
-          ),
-          ()
-        ),
-        _item(
-          _nolink(
-            [College of Engineering Departmental Scholarship],
-            [University of Utah],
-            [Fall 2023, Spring 2024]
-          ),
-          ()
-        ),
-        _item(
-          _nolink(
-            [Dean's List],
-            [University of Utah],
-            [2021 - 2025 _(all semesters)_]
+            [2021 - 2025]
           ),
           ()
         ),
