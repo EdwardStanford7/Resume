@@ -339,28 +339,15 @@
       (
         _item(
           _nolink(
-          [Computer Systems Teaching Assistant],
-          [University of Utah],
-          [January 2026 - May 2026]
-          ),
-          (
-            [Helped over 175 students by managing Piazza discussions, grading
-          assignments, and provided detailed feedback on student submissions.],
-          [Ran labs and held help hours for students to address questions and
-          clarify concepts.],
-          )
-        ),
-        _item(
-          _nolink(
-            [Software Practice II Teaching Assistant],
+            [Teaching Assistant (Computer Systems, Software Practice II, Object Oriented Prog)],
             [University of Utah],
-            [August 2023 - May 2025]
+            [August 2023 - Present],
           ),
           (
-            [Supported over 200 students by managing Piazza discussions, grading
-          assignments, and provided detailed feedback on student submissions.],
-          [Ran labs and held help hours for students to address questions and
-          clarify concepts.],
+            [Supported over 375 students by managing Piazza discussions, grading
+          assignments, and providing detailed feedback on student submissions.],
+            [Ran labs and held help hours to answer questions and clarify
+          concepts.],
           )
         ),
         _item(
@@ -471,7 +458,7 @@
         ),
       )
         ),
-        _block([Misc],
+        _block([Miscellaneous],
       (
         _item(
           _link(
